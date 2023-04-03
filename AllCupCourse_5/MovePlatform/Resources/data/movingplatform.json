@@ -1,0 +1,43 @@
+[{
+	
+"Scale":1,
+"Repeat":0,
+"Revers":0,
+"X":800,
+"Y":300,
+
+	"MoveVector": {
+		"1": {
+			"Impulse": {
+				"Power": 50,
+				"Angle": 90
+			},
+			"Distance": 300
+		},
+
+		"2": {
+			"Impulse": {
+				"Power": 50,
+				"Angle": 0
+			},
+			"Distance": 300
+		},
+
+		"3": {
+			"Impulse": {
+				"Power": 50,
+				"Angle": -90
+			},
+			"Distance": 300
+		},
+
+		"4": {
+			"Impulse": {
+				"Power": 50,
+				"Angle": 180
+			},
+			"Distance": 300
+		}
+	}
+
+}]
