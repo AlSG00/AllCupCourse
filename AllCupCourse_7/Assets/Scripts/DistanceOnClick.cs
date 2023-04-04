@@ -19,7 +19,7 @@ public abstract class DistanceOnClick : MonoBehaviour {
         { 0, 0, 0, 1, 1, 1, 0 }
     };
     public List<Transform> ObjectsList;
-    public int[] distances = new int[] { 0, 0, 0, 0, 0, 0, 0 };
+     
     private void Awake()
     {
         ObjectsList.Add(GameObject.Find("Gate").transform);

@@ -13,7 +13,7 @@ public class Castle : DistanceOnClick {
         {
             if (adjustedNodes[4, i] != 0)
             {
-                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
+                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].position)}");
             }
         }
     }
