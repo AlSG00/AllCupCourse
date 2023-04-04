@@ -11,11 +11,10 @@ public class Sawmill : DistanceOnClick {
 
         for (int i = 0; i < ObjectsList.Count; i++)
         {
-            Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Math.Round(Vector2.Distance(selfPosition, ObjectsList[i].transform.position), 2)}");
-
-
+            if (adjustedNodes[6, i] != 0)
+            {
+                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
+            }
         }
-
-
     }
 }

@@ -19,7 +19,7 @@ public class ArcherArena : DistanceOnClick {
         {
             if (adjustedNodes[3, i] != 0)
             {
-                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Math.Round(Vector2.Distance(selfPosition, ObjectsList[i].transform.position), 2)}");
+                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
             }
         }
     }

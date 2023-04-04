@@ -9,7 +9,10 @@ public class Mill : DistanceOnClick {
 
         for (int i = 0; i < ObjectsList.Count; i++)
         {
-            Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
+            if (adjustedNodes[2, i] != 0)
+            {
+                Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
+            }
         }
     }
 }

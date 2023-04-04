@@ -11,10 +11,10 @@ public class Gate : DistanceOnClick {
 
         for (int i = 0; i < ObjectsList.Count; i++)
         {
-            if (adjustedNodes[0, i] != 0)
-            {
+            //if (adjustedNodes[0, i] != 0)
+            //{
                 Debug.Log($"{transform.name} : {ObjectsList[i].name} : {Vector2.Distance(selfPosition, ObjectsList[i].transform.position)}");
-            }
+            //}
         }
     }
 }
