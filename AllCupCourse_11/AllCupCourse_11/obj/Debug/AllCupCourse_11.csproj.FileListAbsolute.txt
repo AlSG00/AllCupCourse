@@ -1,0 +1,7 @@
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\bin\Debug\AllCupCourse_11.exe.config
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\bin\Debug\AllCupCourse_11.exe
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\bin\Debug\AllCupCourse_11.pdb
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\obj\Debug\AllCupCourse_11.csproj.AssemblyReference.cache
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\obj\Debug\AllCupCourse_11.csproj.CoreCompileInputs.cache
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\obj\Debug\AllCupCourse_11.exe
+E:\Unity projects\AllCupCourse\AllCupCourse_11\AllCupCourse_11\obj\Debug\AllCupCourse_11.pdb
