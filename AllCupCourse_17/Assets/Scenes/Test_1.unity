@@ -13555,7 +13555,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1041431953}
+    m_TransformParent: {fileID: 2107170708}
     m_Modifications:
     - target: {fileID: 1898942825508036, guid: 89183a5c31b1c1b4f89c7e21d8ca741c, type: 3}
       propertyPath: m_Name
@@ -13563,7 +13563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4241627824473718, guid: 89183a5c31b1c1b4f89c7e21d8ca741c, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4241627824473718, guid: 89183a5c31b1c1b4f89c7e21d8ca741c, type: 3}
       propertyPath: m_LocalScale.x
@@ -13641,13 +13641,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dwellerList:
-  - {fileID: 648544553}
-  - {fileID: 6889718}
   - {fileID: 1659989085}
   - {fileID: 1146574077}
+  - {fileID: 659539012}
   - {fileID: 885835524}
   - {fileID: 1367782378}
-  cloudMovingTime: 3
+  - {fileID: 648544553}
+  - {fileID: 6889718}
+  cloudMovingTime: 1
   cloudVerticalOffset: 3
   _cloud: {fileID: 1022963113}
   _rain: {fileID: 349425318}
@@ -13886,7 +13887,6 @@ Transform:
   - {fileID: 1271408822}
   - {fileID: 1139561581}
   - {fileID: 1391116800}
-  - {fileID: 1022963113}
   - {fileID: 2107170708}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -22202,8 +22202,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 800032206}
+  - {fileID: 1022963113}
   m_Father: {fileID: 1041431953}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2118806274
 PrefabInstance:

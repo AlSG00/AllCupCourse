@@ -10,6 +10,7 @@ public class RainCloudHandler : MonoBehaviour
     [SerializeField] private Transform _cloud;
     [SerializeField] private ParticleSystem _rain;
     private int _dwellerIndex = 0;
+    private bool _isMoving = false;
     
     private void Start()
     {
@@ -26,16 +27,15 @@ public class RainCloudHandler : MonoBehaviour
 
     private void MoveToNextDweller()
     {
-        if (_cloud == null)
+        if (dwellerList.Count == 0 ||
+            _cloud == null ||
+            _rain == null ||
+            _isMoving)
         {
             return;
         }
 
-        if (_rain == null)
-        {
-            return;
-        }
-
+        _isMoving = true;
         if (_rain.isPlaying)
         {
             _rain.Stop();
@@ -45,8 +45,8 @@ public class RainCloudHandler : MonoBehaviour
         Vector3 targetPosition;
         targetPosition = new Vector3(
             currentDweller.position.x,
-            currentDweller.position.y,
-            currentDweller.position.z + cloudVerticalOffset
+            currentDweller.position.y + cloudVerticalOffset,
+            currentDweller.position.z 
             );
 
         StopAllCoroutines();
@@ -59,16 +59,17 @@ public class RainCloudHandler : MonoBehaviour
     private IEnumerator MoveRoutine(Vector3 target)
     {
         float elapsedTime = 0f;
-        
-        while(elapsedTime < cloudMovingTime)
+        Vector3 startPosition = _cloud.position;
+        while (elapsedTime < cloudMovingTime)
         {
+            _cloud.position = Vector3.Lerp(startPosition, target, elapsedTime / cloudMovingTime);
             elapsedTime += Time.deltaTime;
-            _cloud.position = Vector3.Lerp(_cloud.localPosition, target, elapsedTime / cloudMovingTime);
             yield return null;
         }
-
+        
         _cloud.position = target;
         _rain.Play();
+        _isMoving = false;
         yield return null;
     }
 }
