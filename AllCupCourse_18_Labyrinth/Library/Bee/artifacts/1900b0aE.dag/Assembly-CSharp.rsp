@@ -355,8 +355,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Exit.cs"
 "Assets/Scripts/Game.cs"
+"Assets/Scripts/Key.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/PointPatroller.cs"
 "Assets/Scripts/PointsObserver.cs"
 -langversion:9.0
 

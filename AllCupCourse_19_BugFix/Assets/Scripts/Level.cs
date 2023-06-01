@@ -52,7 +52,7 @@ namespace Game
 
         private void TryCompleteLevel()
         {
-            if (_exitFromLevel.IsOpen == false) { return; } // 1 Отсутствовала строка
+            if (_exitFromLevel.IsOpen == false) { return; } // Баг на победу без ключа - Отсутствовала строка
 
             var flatExitPosition = new Vector2(_exitFromLevel.transform.position.x, _exitFromLevel.transform.position.z);
             var flatPlayerPosition = new Vector2(_player.transform.position.x, _player.transform.position.z);
@@ -70,11 +70,10 @@ namespace Game
             Destroy(_player.gameObject);
         }
 
-        private void LookAtPlayerInventory() // 1 Отсутствовал код в методе
+        private void LookAtPlayerInventory() // Баг на победу без ключа - Отсутствовал код в методе
         {
             if (_player.HasKey)
                 _exitFromLevel.Open();
-
         }
 
         public void Victory()
